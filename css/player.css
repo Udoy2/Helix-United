@@ -25,7 +25,6 @@
 }
 
 .player_card .card_body {
-  background: url("/assets/player_card_bg.jpg");
   position: absolute;
   top: 0;
   left: 0;
@@ -46,7 +45,8 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  height: 100%;
+  height: 120%;
+  width: 100%;
   transform: translateX(-50%);
   transition: 0.4s transform ease-in;
 }
@@ -82,7 +82,11 @@
 .player_card .card_body .player_info {
   position: absolute;
   bottom: 15px;
-  left: 15px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.308);
+  max-width: 70%;
+  padding: 0rem 1rem;
+  transition: 0.2s background-color;
 }
 
 .player_info .designation {
@@ -92,7 +96,7 @@
 .player_info .name {
   font-size: 15px;
   font-weight: 500;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .player_card .footer_button {
   position: absolute;
@@ -118,6 +122,9 @@
   opacity: 1;
 }
 
+.player_card:hover .player_info {
+  background-color: rgba(0, 0, 0, 0);
+}
 .player_card:hover .footer_button {
   background: var(--yellow_foreground);
   color: var(--dark_theme);

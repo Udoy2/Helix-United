@@ -20,11 +20,20 @@ nav {
 }
 
 .navbar_brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-family: "Roboto Slab", serif;
   font-weight: 200;
   font-size: 26px;
+  cursor: pointer;
 }
 
+.navbar_brand > img {
+  margin-right: 1rem;
+  width: 40px;
+  height: 40px;
+}
 .sidebar_toogler {
   cursor: pointer;
 }
@@ -42,6 +51,7 @@ nav {
   background: var(--dark_theme);
   z-index: 120;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.3s right;
 }
 
 .sidebar ul {
