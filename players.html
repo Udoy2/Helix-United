@@ -14,23 +14,47 @@
       href="https://fonts.googleapis.com/css2?family=Rasa:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/common.css" />
     <link rel="stylesheet" href="/css/player.css" />
     <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/preloader.css" />
+    <script src="/js/loadfirst.js"></script>
 
   </head>
   <body>
+    <div class="preloader_container">
+      <div class="dots dot12">
+        <div class="dot d1"></div>
+        <div class="dot d2"></div>
+        <div class="dot d11"></div>
+        <div class="dot d21"></div>
+      </div>
+    </div>
     <!-- header part  -->
     <header>
       <!-- navbar -->
       <nav class="text_white">
         <div class="navbar_brand" onclick="window.location.href = '/' ">
-          <img src="/assets/favicon-32x32.png"  alt='logo'>
+          <img src="/assets/logo.png" alt="logo" />
           <span>Helix United</span>
         </div>
         <div class="navbar_nav navbar_collapse">
@@ -41,10 +65,7 @@
           </ul>
         </div>
         <div class="sidebar_toogler">
-          <i
-            class="fas fa-bars"
-            id='sidebar_open'
-          ></i>
+          <i class="fas fa-bars" id="sidebar_open"></i>
         </div>
       </nav>
 
@@ -55,7 +76,7 @@
           <i
             class="fas fa-times mt_2"
             style="cursor: pointer"
-            id='sidebar_close'
+            id="sidebar_close"
           ></i>
         </div>
         <ul>
@@ -950,7 +971,6 @@
                 <h2>Player Card</h2>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -1205,7 +1225,6 @@
                 <h2>Player Card</h2>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -1219,10 +1238,7 @@
           <i class="fab fa-instagram"> </i>
         </a>
 
-        <a
-          href="#"
-          class="sm-button"
-        >
+        <a href="#" class="sm-button">
           <i class="fab fa-linkedin"> </i>
         </a>
 
@@ -1242,8 +1258,6 @@
       <!-- Social media icons line Start -->
 
       <div class="footer-links mt_2">
-
-
         <div class="menu">
           <h4 class="menu-title">Website Pages</h4>
 
@@ -1252,7 +1266,6 @@
           <a href="/players.html" class="other-links">Players</a>
 
           <a href="/social.html" class="other-links">Social Wall</a>
-
         </div>
       </div>
 
@@ -1264,7 +1277,7 @@
       </p>
       <p class="dev_credit">
         Designed and Developed By:
-        <a href="">Udoy Rahman</a> 
+        <a href="">Udoy Rahman</a>
       </p>
     </footer>
     <script src="/js/common.js"></script>

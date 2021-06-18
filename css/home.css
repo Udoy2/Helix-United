@@ -157,9 +157,12 @@
   margin-bottom: 2rem;
 }
 /* sponsore */
+.sponsore {
+  width: 70%;
+  margin: auto;
+}
 .sponsore .sponsore_heading {
   background: var(--background_white);
-  width: 70%;
   height: 100px;
   margin: auto;
   border-radius: 20px;
@@ -177,7 +180,6 @@
 .sponsore_container {
   display: flex;
   justify-content: space-between;
-  width: 70%;
   margin: auto;
 }
 
@@ -312,6 +314,9 @@
   .notice {
     flex-direction: column;
   }
+  .sponsore {
+    width: 90%;
+  }
   .sponsore_container {
     flex-direction: column;
     align-items: center;
@@ -333,6 +338,9 @@
   /* your code here */
   .notice {
     flex-direction: column;
+  }
+  .sponsore {
+    width: 98%;
   }
   .sponsore_container {
     flex-direction: column;
