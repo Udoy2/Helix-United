@@ -1,0 +1,364 @@
+/* classes */
+
+.home_cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/assets/home_cover.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 120vh;
+  margin-top: -200px;
+  z-index: -1;
+}
+
+.home_cover > h1 {
+  font-size: 7rem;
+  font-weight: 400;
+}
+
+.welcome_message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  height: 100px;
+  width: 80%;
+  margin: auto;
+  margin-top: -50px;
+  border-radius: 2rem;
+}
+
+.welcome_message > p {
+  font-size: 20px;
+  padding: 0px 1rem;
+}
+
+.owl-carousel {
+  width: 70% !important;
+
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.owl-carousel .item {
+  position: relative;
+  background: var(--background_white);
+  border: 2px solid rgb(31, 46, 61);
+  height: 400px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.owl-carousel .item > img {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 220px;
+}
+
+.owl-carousel .item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(31, 46, 61, 0.582);
+}
+
+.owl-carousel .item > .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.owl-carousel .item .body h3 {
+  font-size: 30px;
+  color: var(--dark_theme);
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.notice {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.notice .image_container {
+  flex: 1;
+}
+
+.notice .image_container img {
+  height: 100%;
+  width: 100%;
+}
+
+.notice .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 2rem;
+}
+
+.notice .content h3 {
+  margin-bottom: 2rem;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.notice .content p {
+  font-size: 20px;
+  font-weight: 300;
+}
+/* group pic breakpoint */
+.group_pic_breakpoint {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/assets/home_cover.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+/* sponsore */
+.sponsore {
+  width: 70%;
+  margin: auto;
+}
+.sponsore .sponsore_heading {
+  background: var(--background_white);
+  height: 100px;
+  margin: auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.sponsore_heading h1 {
+  font-size: 36px;
+  color: var(--grey_text_color);
+  text-transform: capitalize;
+}
+.sponsore_container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.sponsore_container .sponsore_card {
+  position: relative;
+  background: #fff;
+  width: 300px;
+  height: 350px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.sponsore_card .image_container {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  left: 5px;
+  bottom: 120px;
+}
+
+.sponsore_card .image_container img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.sponsore_card .card_content {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  right: 10px;
+}
+
+.sponsore_card .card_content h3 {
+  font-size: 23px;
+  margin-bottom: 5px;
+  color: var(--grey_text_color);
+}
+
+.sponsore_card .card_content p {
+  font-size: 16px;
+  color: var(--grey_text_color);
+}
+
+.footer {
+  position: relative;
+  background: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+  width: 100%;
+  height: 600px;
+}
+
+.map {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+}
+.footer iframe {
+  border-radius: 12px;
+}
+
+.footer_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.developer_credit {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  background: var(--dark_theme);
+  width: 100%;
+  padding-top: 10px;
+}
+
+.developer_credit > a {
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+
+.developer_credit > span {
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Desktop Wide: */
+@media screen and (min-width: 1170px) {
+  /* your code here */
+}
+
+/* Desktop: */
+@media screen and (max-width: 1169px) and (min-width: 992px) {
+  /* your code here */
+}
+
+/* Tablet Wide: */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  /* your code here */
+  .notice {
+    flex-direction: column;
+  }
+  .sponsore_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sponsore_card {
+    width: 80% !important;
+    height: 440px !important;
+  }
+}
+
+/* Tablet Portrait: */
+@media screen and (max-width: 767px) and (min-width: 544px) {
+  /* your code here */
+  .notice {
+    flex-direction: column;
+  }
+  .sponsore {
+    width: 90%;
+  }
+  .sponsore_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sponsore_card {
+    width: 80% !important;
+    height: 440px !important;
+  }
+  .swiper-container {
+    width: 100%;
+  }
+  .home_cover > h1 {
+    font-size: 5rem;
+  }
+}
+
+/* Mobile: */
+@media screen and (max-width: 543px) {
+  /* your code here */
+  .notice {
+    flex-direction: column;
+  }
+  .sponsore {
+    width: 98%;
+  }
+  .sponsore_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sponsore_card {
+    width: 80% !important;
+    height: 440px !important;
+  }
+
+  .swiper-container {
+    width: 100%;
+  }
+  .home_cover > h1 {
+    font-size: 4rem;
+  }
+  .welcome_message > p {
+    font-size: 17px;
+    text-align: center;
+  }
+}
